@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "spawn.immunity.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"SpawnImmunityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

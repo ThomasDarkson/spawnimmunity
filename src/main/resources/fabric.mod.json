@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "spawnimmunityback",
+	"version": "${version}",
+	"name": "Spawn Immunity Back",
+	"description": "Brings back Spawn Immunity to 1.21.4",
+	"authors": [
+		"Tahir Toprak Karabekiroğlu"
+	],
+	"contact": {
+		"homepage": "https://github.com/TahirToprakKarabekiroglu/spawnimmunityback",
+		"sources": "https://github.com/TahirToprakKarabekiroglu/spawnimmunityback"
+	},
+	"license": "Apache",
+	"icon": "assets/spawnimmunityback/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"spawn.immunity.SpawnImmunityBack"
+		]
+	},
+	"mixins": [
+		"spawnimmunityback.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
