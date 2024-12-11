@@ -1,14 +1,6 @@
-![Icon](https://i.ibb.co/p4BZGrZ/icon.png "icon")
+Bring back the 3 seconds of invulnerability when you spawn in a world!
 
-# Spawn Immunity Back
+Mojang fixed this "bug" with 1.21.4+ but this mod brings it back. 
+If you want to disable spawn immunity for a world, set the game rule `spawnImmunity` to false.
 
-**Spawn Immunity Back** is a lightweight Minecraft mod for Fabric that restores the **spawn immunity** feature removed in version **1.21.4**. 
-
-Prior to this update, players were granted **60 ticks** (3 in-game seconds) of invulnerability upon spawning into any singleplayer world. This mod seamlessly reintroduces this feature while ensuring full compatibility with other mods!
-
-## Compatibility
-- **Minecraft Versions**: 1.21.4 and later.
-- **Mod Loaders**: Fabric only
-
-## Support
-For bug reports, open an issue on the [GitHub repository](https://github.com/TahirToprakKarabekiroglu/spawnimmunityback).
+You need **Fabric API** and Minecraft **1.21.4**+ for this mod.

@@ -1,26 +1,26 @@
 {
 	"schemaVersion": 1,
-	"id": "spawnimmunityback",
+	"id": "spawnimmunity",
 	"version": "${version}",
-	"name": "Spawn Immunity Back",
-	"description": "Brings back Spawn Immunity to 1.21.4",
+	"name": "Spawn Immunity for 1.21.4+",
+	"description": "Bring back spawn immunity for 1.21.4+!",
 	"authors": [
 		"Tahir Toprak Karabekiroğlu"
 	],
 	"contact": {
-		"homepage": "https://github.com/TahirToprakKarabekiroglu/spawnimmunityback",
-		"sources": "https://github.com/TahirToprakKarabekiroglu/spawnimmunityback"
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/spawnimmunity",
+		"sources": "https://github.com/TahirToprakKarabekiroglu/SpawnImmunity"
 	},
 	"license": "Apache",
-	"icon": "assets/spawnimmunityback/icon.png",
+	"icon": "assets/spawnimmunity/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"spawn.immunity.SpawnImmunityBack"
+			"spawn.immunity.SpawnImmunity"
 		]
 	},
 	"mixins": [
-		"spawnimmunityback.mixins.json"
+		"spawnimmunity.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",

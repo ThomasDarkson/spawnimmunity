@@ -3,6 +3,7 @@ package spawn.immunity.mixin;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
+import spawn.immunity.SpawnImmunity;
 import spawn.immunity.SpawnImmunityAccessor;
 
 import org.spongepowered.asm.mixin.Mixin;
@@ -32,8 +33,11 @@ public abstract class SpawnImmunityMixin implements SpawnImmunityAccessor {
 
     @Inject(method = "damage", at = @At("HEAD"), cancellable = true)
     private void onDamage(ServerWorld world, DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
-        if (this.spawnImmunityTicks > 0) {
-            cir.setReturnValue(false);
+        if (world.getGameRules().getBoolean(SpawnImmunity.SPAWN_IMMUNITY))
+        {
+            if (this.spawnImmunityTicks > 0) {
+                cir.setReturnValue(false);
+            }
         }
     }
 
