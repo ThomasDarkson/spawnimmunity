@@ -1,3 +1,4 @@
 {
-    "gamerule.spawnImmunity": "Enable Spawn Immunity"
-  }
+  "gamerule.spawnImmunity": "Spawn Immunity",
+  "gamerule.immuneTicks": "How long you are immune on spawn. 20 ticks is equal to 1 second"
+}

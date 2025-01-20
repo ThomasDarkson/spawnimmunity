@@ -12,6 +12,9 @@ public class SpawnImmunity implements ModInitializer {
 	public static final GameRules.Key<GameRules.BooleanRule> SPAWN_IMMUNITY =
 	GameRuleRegistry.register("spawnImmunity", Category.SPAWNING, GameRuleFactory.createBooleanRule(true));
 
+	public static final GameRules.Key<GameRules.IntRule> IMMUNE_TICKS = 
+	GameRuleRegistry.register("immuneTicks", Category.SPAWNING, GameRuleFactory.createIntRule(60));
+
 	@Override
 	public void onInitialize() {
 	}
