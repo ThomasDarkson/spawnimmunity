@@ -2,14 +2,14 @@
 	"schemaVersion": 1,
 	"id": "spawnimmunity",
 	"version": "${version}",
-	"name": "Spawn Immunity for 1.21.4+",
-	"description": "Bring back the 3* seconds of invulnerability when you spawn in a world!",
+	"name": "Bring Back My Spawn Immunity",
+	"description": "Brings back the 3* seconds of invulnerability at spawn.",
 	"authors": [
 		"Thomas Darkson"
 	],
 	"contact": {
 		"homepage": "https://www.curseforge.com/minecraft/mc-mods/spawnimmunity",
-		"sources": "https://github.com/ThomasDarkson/SpawnImmunity"
+		"sources": "https://github.com/ThomasDarkson/spawnimmunity"
 	},
 	"license": "Apache",
 	"icon": "assets/spawnimmunity/icon.png",

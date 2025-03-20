@@ -1,0 +1,4 @@
+{
+  "gamerule.immuneTicks": "Ölümsüz Tikler",
+  "gamerule.immuneTicks.description": "Giriş yaptığında kaç tik boyunca ölümsüz olacağını belirleyen sayı. 20 tik bir saniyeye eşittir"
+}

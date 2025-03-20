@@ -31,19 +31,13 @@ public abstract class SpawnImmunityMixin implements SpawnImmunityAccessor {
         ServerPlayerEntity player = (ServerPlayerEntity) (Object) this;
         ServerWorld world = player.getServerWorld();
 
-        if (world.getGameRules().getBoolean(SpawnImmunity.SPAWN_IMMUNITY))
-            this.spawnImmunityTicks = Math.max(0, world.getGameRules().getInt(SpawnImmunity.IMMUNE_TICKS));
-        else
-            this.spawnImmunityTicks = 0;
+        this.spawnImmunityTicks = world.getGameRules().getInt(SpawnImmunity.IMMUNE_TICKS);
     }
 
     @Inject(method = "damage", at = @At("HEAD"), cancellable = true)
-    private void onDamage(ServerWorld world, DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
-        if (world.getGameRules().getBoolean(SpawnImmunity.SPAWN_IMMUNITY))
-        {
-            if (this.spawnImmunityTicks > 0) {
-                cir.setReturnValue(false);
-            }
+    private void damage(ServerWorld world, DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
+        if (this.spawnImmunityTicks > 0) {
+            cir.setReturnValue(false);
         }
     }
 

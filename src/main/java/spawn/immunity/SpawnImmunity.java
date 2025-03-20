@@ -9,11 +9,8 @@ import net.minecraft.world.GameRules.Category;
 public class SpawnImmunity implements ModInitializer {
 	public static final String MOD_ID = "spawnimmunity";
 
-	public static final GameRules.Key<GameRules.BooleanRule> SPAWN_IMMUNITY =
-	GameRuleRegistry.register("spawnImmunity", Category.SPAWNING, GameRuleFactory.createBooleanRule(true));
-
 	public static final GameRules.Key<GameRules.IntRule> IMMUNE_TICKS = 
-	GameRuleRegistry.register("immuneTicks", Category.SPAWNING, GameRuleFactory.createIntRule(60));
+	GameRuleRegistry.register("immuneTicks", Category.SPAWNING, GameRuleFactory.createIntRule(60, 0, Integer.MAX_VALUE));
 
 	@Override
 	public void onInitialize() {

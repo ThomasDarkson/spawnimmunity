@@ -3,11 +3,8 @@
 
 [<img alt="fabric" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/fabric_vector.svg">](https://fabricmc.net/)
 
-Bring back the 3* seconds of invulnerability when you spawn in a world!
+This mod brings back the 3 seconds of immunity when you spawn.
+This "bug" was fixed in 1.21.4 but this mod brings it back and you can even set how long you want to be immune at spawn!
 
-Mojang fixed this "bug" with 1.21.4+ but this mod brings it back. 
-If you want to disable spawn immunity for a world, set the game rule `spawnImmunity` to false.
+With the game rule `immuneTicks`, you can close this feature or make it even longer. Default value is 60 (20 ticks = 1 second).
 
-You can customize how long you are gonna be immune at spawn with the game rule `immuneTicks`! 20 ticks equal to 1 second.
-
-You need **Fabric API** and Minecraft **1.21.4**+ for this mod.
