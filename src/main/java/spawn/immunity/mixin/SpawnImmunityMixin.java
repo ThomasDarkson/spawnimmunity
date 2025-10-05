@@ -29,7 +29,7 @@ public abstract class SpawnImmunityMixin implements SpawnImmunityAccessor {
     @Inject(method = "onSpawn", at = @At("TAIL"))
     private void onSpawn(CallbackInfo ci) {
         ServerPlayerEntity player = (ServerPlayerEntity) (Object) this;
-        ServerWorld world = player.getWorld();
+        ServerWorld world = player.getEntityWorld();
 
         this.spawnImmunityTicks = world.getGameRules().getInt(SpawnImmunity.IMMUNE_TICKS);
     }
