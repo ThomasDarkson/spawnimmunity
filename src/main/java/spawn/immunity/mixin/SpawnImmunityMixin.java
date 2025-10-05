@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(ServerPlayerEntity.class)
+@Mixin(value = ServerPlayerEntity.class, priority = 1)
 public abstract class SpawnImmunityMixin implements SpawnImmunityAccessor {
     private int spawnImmunityTicks = 0;
 
